@@ -5,6 +5,7 @@ int number_of_processes,resource_types,not_enough_resources=0,allocated[20][5],m
 bool finished[20];
 void execute(int i)
 {
+    
     for(int j=0;j<resource_types;j++)
         total_resources[j]=total_resources[j]+allocated[i][j];
 }
